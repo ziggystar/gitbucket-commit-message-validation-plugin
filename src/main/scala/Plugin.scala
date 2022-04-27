@@ -1,13 +1,6 @@
-import cats.instances.map
-import cats.syntax.flatMap
 import gitbucket.core.model.Profile
-import gitbucket.core.plugin.{IssueHook, ReceiveHook}
-import gitbucket.core.service.{
-  AccountService,
-  CommitStatusService,
-  RepositoryService,
-  SystemSettingsService
-}
+import gitbucket.core.plugin.ReceiveHook
+import gitbucket.core.service.{AccountService, CommitStatusService, RepositoryService, SystemSettingsService}
 import gitbucket.core.util.{Directory, JGitUtil}
 import io.circe._
 import io.circe.generic.semiauto._
