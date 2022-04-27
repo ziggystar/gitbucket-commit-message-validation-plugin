@@ -1,0 +1,8 @@
+- master:
+  refpattern: "master"
+  msgpattern: "(wip|feat|rfr) []..."
+  message: "muss immer schön sein"
+- tg:
+  refpattern: "tg/.+"
+  msgpattern: ".*mist.*"
+  message: "Brauchst Mist!"

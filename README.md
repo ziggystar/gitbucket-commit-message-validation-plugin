@@ -9,7 +9,20 @@ To begin using the plugin:
 1. Download the latest release
 2. Install in the `$GITBUCKET_HOME/plugins` directory
 3. Restart GitBucket
-4. Add a `.gitMessageFormat` file, that contains a regular expression at the root folder of your repository
+4. Add a `.gitMessageFormat` file with rules
+
+## Example `.gitMessageFormat`
+
+`refPattern` and `note` are optional.
+
+```yaml
+- refPattern: "refs/heads/master"
+  messagePattern: "(feat|rfr) \(.+\): .*"
+  note: "be nice!"
+- refPattern: ".*"
+  messagePattern: "f%!ck"
+  note: "no swear words in commit messages"
+```
 
 ## Building from Source
 
